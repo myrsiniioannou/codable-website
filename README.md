@@ -20,7 +20,7 @@ Codable is a dynamic team of digital nomads passionate about crafting exceptiona
 To get a local copy of the website up and running, follow these simple steps:
 
 1. Clone this repository.
-git clone https://github.com/myrsiniioannou/codable-website.git
+```git clone https://github.com/myrsiniioannou/codable-website.git```
 
 2. Open the project in your preferred code editor.
 
@@ -34,8 +34,8 @@ We'd love to hear from you! If you have questions, feedback, or collaboration in
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/myrsiniioannou/codable-website.git) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/myrsiniioannou/codable-website/MIT-LICENSE.txt) file for details.
 
 Thank you for considering Codable for your digital needs. We look forward to partnering with you!
 
-![Codable Logo](https://github.com/myrsiniioannou/codable-website/public/codable.png)
+![Codable Logo](https://raw.githubusercontent.com/myrsiniioannou/codable-website/main/public/codable.png)

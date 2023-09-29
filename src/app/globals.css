@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +24,197 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+@font-face {
+  font-family: satoshi;
+  src: url("fonts/satoshi.ttf") format("truetype");
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+  border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+.menuButtonArrow {
+  position: absolute;
+  width: 6rem;
+  right: 0rem;
+}
+
+.menuButtonArrow:before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background: white;
+  position: absolute;
+  right: 2rem;
+  transition: all 0.3s ease;
+}
+
+.menuButtonArrow:hover:before {
+  right: 3rem;
+  width: 2rem;
+}
+
+.menuButtonArrow:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 3px 0 3px 3px;
+  border-color: transparent transparent transparent white;
+  position: absolute;
+  margin-top: -2px;
+  right: 1.85rem;
+  transition: all 0.2s ease;
+}
+
+.menuButtonArrow:hover:after {
+  right: 3rem;
+  right: 2.85rem;
+}
+
+/* Button Hover */
+
+#accordion-collapse-heading-1:hover .menuButtonArrow:before,
+#accordion-collapse-heading-2:hover .menuButtonArrow:before,
+#accordion-collapse-heading-3:hover .menuButtonArrow:before,
+#accordion-collapse-heading-4:hover .menuButtonArrow:before {
+  right: 3rem;
+  width: 2rem;
+}
+
+#accordion-collapse-heading-1:hover .menuButtonArrow:after,
+#accordion-collapse-heading-2:hover .menuButtonArrow:after,
+#accordion-collapse-heading-3:hover .menuButtonArrow:after,
+#accordion-collapse-heading-4:hover .menuButtonArrow:after {
+  right: 3rem;
+  right: 2.85rem;
+}
+
+#circle-container {
+  margin: 0%;
+}
+
+#circle text {
+  font-family: "Helvetica Neue", Arial;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#circle svg {
+  width: 8rem;
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 10s;
+  -moz-animation-duration: 10s;
+  -ms-animation-duration: 10s;
+  -o-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0);
+  }
+}
+@-ms-keyframes rotate {
+  from {
+    -ms-transform: rotate(-360deg);
+  }
+  to {
+    -ms-transform: rotate(0);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotate(-360deg);
+  }
+  to {
+    -o-transform: rotate(0);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  [type="button"],
+  [type="reset"],
+  [type="submit"],
+  button {
+    background-color: #000 !important;
+  }
+
+  #accordion-collapse-body-1 > div,
+  #accordion-collapse-body-2 > div,
+  #accordion-collapse-body-3 > div,
+  #accordion-collapse-body-4 > div {
+    background: #000 !important;
+  }
+
+  #circle svg {
+    width: 35%;
+  }
+
+  #circle-container {
+    margin-top: 2rem;
+  }
+}
+
+::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
 }

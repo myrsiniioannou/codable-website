@@ -4,15 +4,32 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        'satoshi': "satoshi"
+      },
+      keyframes: {
+        buttonReveal: {
+          '0%': { transform: 'scaleY(50%) translateY(-20%)', color: "transparent" , "border-color": "transparent"},
+          '50%': { "border-color": "transparent"},
+          '100%': { transform: 'scaleY(100%) translateY(0)', color: "white" , "border-color": "white"},
+        }
+        // buttonHide: {
+        //   '0%': { transform: 'scaleY(100%) translateY(0)', color: "white" , "border-color": "white"},
+        //   '50%': { "border-color": "transparent"},
+        //   '100%': { transform: 'scaleY(50%) translateY(-20%)', color: "transparent" , "border-color": "transparent"},
+        // }
+      },
+      animation: {
+        buttonReveal: 'buttonReveal 300ms ease-in-out'
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin'),
+    require("@thoughtbot/tailwindcss-aria-attributes")
+  ],
 }

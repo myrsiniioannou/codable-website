@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Codable Website
+
+Welcome to the official repository of the Codable website. This repository contains the source code and assets for our company website.
+
+## About Codable
+
+Codable is a dynamic team of digital nomads passionate about crafting exceptional digital experiences. We specialize in web and app development, leveraging technologies such as WordPress, Drupal, Java, Spring, Angular, and React to bring your digital vision to life. With a commitment to innovation, we've been empowering businesses to thrive in the digital landscape.
+
+## Features
+
+- **Professional Web Development**: We create stunning websites tailored to your unique needs.
+- **Cutting-Edge App Development**: Our experts build high-performance mobile and web applications.
+- **Nomadic Spirit**: We work from anywhere in the world, adapting to your project's requirements.
+- **Tourism Sector Expertise**: We have extensive experience in developing touristic products and services.
+- **Portal Development**: We specialize in crafting portals for various industries.
+- **Innovation-Driven Approach**: Our passion lies in pushing the boundaries of technology.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy of the website up and running, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone this repository.
+git clone https://github.com/myrsiniioannou/codable-website.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Open the project in your preferred code editor.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Customize the website by editing the HTML, CSS, and JavaScript files to match your branding and content.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Deploy the website to your hosting provider or platform of choice.
 
-## Learn More
+## Contact Us
 
-To learn more about Next.js, take a look at the following resources:
+We'd love to hear from you! If you have questions, feedback, or collaboration inquiries, please reach out to us via email at [info@codable.com](mailto:info@codable.gr).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/myrsiniioannou/codable-website.git) file for details.
 
-## Deploy on Vercel
+Thank you for considering Codable for your digital needs. We look forward to partnering with you!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Codable Logo](https://github.com/myrsiniioannou/codable-website/public/codable.png)

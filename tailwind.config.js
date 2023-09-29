@@ -17,11 +17,6 @@ module.exports = {
           '50%': { "border-color": "transparent"},
           '100%': { transform: 'scaleY(100%) translateY(0)', color: "white" , "border-color": "white"},
         }
-        // buttonHide: {
-        //   '0%': { transform: 'scaleY(100%) translateY(0)', color: "white" , "border-color": "white"},
-        //   '50%': { "border-color": "transparent"},
-        //   '100%': { transform: 'scaleY(50%) translateY(-20%)', color: "transparent" , "border-color": "transparent"},
-        // }
       },
       animation: {
         buttonReveal: 'buttonReveal 300ms ease-in-out'

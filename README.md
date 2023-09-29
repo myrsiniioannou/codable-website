@@ -34,8 +34,8 @@ We'd love to hear from you! If you have questions, feedback, or collaboration in
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/myrsiniioannou/codable-website/MIT-LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](MIT-LICENSE.txt) file for details.
 
 Thank you for considering Codable for your digital needs. We look forward to partnering with you!
 
-![Codable Logo](https://raw.githubusercontent.com/myrsiniioannou/codable-website/main/public/codable.png)
+![Codable Logo](public/codable.png)

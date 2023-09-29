@@ -65,10 +65,10 @@ export default function Home() {
 
   return (
     <main
-      className="flex flex-col min-h-screen lg:h-screen justify-between px-16 py-10 font-satoshi overflow-x-clip"
+      className="flex flex-col min-h-screen lg:h-screen justify-between px-16 max-sm:px-8 py-10 font-satoshi overflow-x-clip"
       ref={vantaRef}
     >
-      <div className="flex flex-col lg:flex-row w-full h-full">
+      <div className="flex flex-col lg:flex-row w-full h-full" id="mainContainer">
         <div className="flex flex-col w-full h-full font-black max-lg:justify-around lg:justify-between">
           <div className="flex w-full max-lg:justify-center lg:justify-start">
             <Link href="/">
@@ -93,7 +93,7 @@ export default function Home() {
           <h2 id="accordion-collapse-heading-1">
             <button
               type="button"
-              className="flex bg-black items-center justify-between w-full p-4 text-left text-xl text-white border border-white rounded-[15px] aria-expanded:pb-0 aria-expanded:rounded-b-none aria-expanded:border-b-0 duration-0 aria-expanded:bg-transparent aria-expanded:border-neutral-300 hover:border-neutral-300"
+              className="flex bg-black items-center justify-between w-full mt-4 p-4 text-left text-xl text-white border border-white rounded-[15px] aria-expanded:rounded-b-none aria-expanded:bg-transparent aria-expanded:border-neutral-300  hover:border-neutral-300"
               data-accordion-target="#accordion-collapse-body-1"
               aria-expanded="false"
               aria-controls="accordion-collapse-body-1"
@@ -128,7 +128,7 @@ export default function Home() {
                   display: "flex",
                 }}
               />
-              <p className="mb-2 border-t border-white pt-6">
+              <p className="mb-2">
                 We're a dynamic team of digital nomads, unburdened by the
                 confines of a traditional office. Our journey takes us across
                 the globe as we work seamlessly to transform your ideas into

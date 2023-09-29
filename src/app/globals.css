@@ -3,17 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
 
 body {
@@ -53,6 +45,7 @@ body {
   background: #000;
 }
 
+/* Button Arrow */
 .menuButtonArrow {
   position: absolute;
   width: 6rem;
@@ -65,7 +58,7 @@ body {
   height: 1px;
   background: white;
   position: absolute;
-  right: 2rem;
+  right: 6rem;
   transition: all 0.3s ease;
 }
 
@@ -83,31 +76,28 @@ body {
   border-color: transparent transparent transparent white;
   position: absolute;
   margin-top: -2px;
-  right: 1.85rem;
+  right: 5.85rem;
   transition: all 0.2s ease;
 }
 
 .menuButtonArrow:hover:after {
-  right: 3rem;
-  right: 2.85rem;
+  right: -3rem;
+  right: -1.85rem;
 }
 
-/* Button Hover */
-
+/* Accordion */
 #accordion-collapse-heading-1:hover .menuButtonArrow:before,
 #accordion-collapse-heading-2:hover .menuButtonArrow:before,
 #accordion-collapse-heading-3:hover .menuButtonArrow:before,
 #accordion-collapse-heading-4:hover .menuButtonArrow:before {
-  right: 3rem;
-  width: 2rem;
+  right: 7rem;
 }
 
 #accordion-collapse-heading-1:hover .menuButtonArrow:after,
 #accordion-collapse-heading-2:hover .menuButtonArrow:after,
 #accordion-collapse-heading-3:hover .menuButtonArrow:after,
 #accordion-collapse-heading-4:hover .menuButtonArrow:after {
-  right: 3rem;
-  right: 2.85rem;
+  right: 6.85rem;
 }
 
 #circle-container {
@@ -201,7 +191,7 @@ body {
   }
 
   #circle svg {
-    width: 35%;
+    width: 12rem;
   }
 
   #circle-container {
@@ -217,4 +207,40 @@ body {
 ::selection {
   background: #fff;
   color: #000;
+}
+
+#mainContainer {
+  position: initial !important;
+}
+
+.rotate-180 {
+  transform: translate(-8rem, 0) rotate(180deg) !important;
+}
+
+@media only screen and (max-width: 640px) {
+  .menuButtonArrow:before {
+    right: 4rem;
+  }
+  .menuButtonArrow:after {
+    right: 3.85rem;
+  }
+
+  /* Accordion */
+  #accordion-collapse-heading-1:hover .menuButtonArrow:before,
+  #accordion-collapse-heading-2:hover .menuButtonArrow:before,
+  #accordion-collapse-heading-3:hover .menuButtonArrow:before,
+  #accordion-collapse-heading-4:hover .menuButtonArrow:before {
+    right: 5rem;
+  }
+
+  #accordion-collapse-heading-1:hover .menuButtonArrow:after,
+  #accordion-collapse-heading-2:hover .menuButtonArrow:after,
+  #accordion-collapse-heading-3:hover .menuButtonArrow:after,
+  #accordion-collapse-heading-4:hover .menuButtonArrow:after {
+    right: 4.85rem;
+  }
+
+  .rotate-180 {
+    transform: translate(-4rem, 0) rotate(180deg) !important;
+  }
 }
